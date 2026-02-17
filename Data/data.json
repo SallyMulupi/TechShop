@@ -1,0 +1,57 @@
+[
+    {
+      "id": 0,
+      "productName": "Wireless Headphones",
+      "image": "🎧",
+      "from": "AudioTech Inc.",
+      "feature": "Noise Cancellation",
+      "quantity": "1",
+      "price": 149.99,
+      "subscription": true,
+      "description": "Premium wireless headphones with active noise cancellation, 30-hour battery life, and immersive sound quality. Features comfortable over-ear design with memory foam cushions for extended listening sessions."
+    },
+    {
+      "id": 1,
+      "productName": "Smart Watch",
+      "image": "⌚",
+      "from": "TechWear Co.",
+      "feature": "Health Tracking",
+      "quantity": "1",
+      "price": 299.99,
+      "subscription": true,
+      "description": "Advanced smartwatch with health monitoring features including heart rate, sleep tracking, and blood oxygen levels. Water-resistant design with a vibrant OLED display and 7-day battery life."
+    },
+    {
+      "id": 2,
+      "productName": "Bluetooth Speaker",
+      "image": "🔊",
+      "from": "SoundBox",
+      "feature": "360° Sound",
+      "quantity": "1",
+      "price": 89.99,
+      "subscription": false,
+      "description": "Portable Bluetooth speaker with 360-degree sound output and deep bass performance. Features 12-hour battery life, IPX7 waterproof rating, and can be paired with another speaker for stereo sound."
+    },
+    {
+      "id": 3,
+      "productName": "Digital Camera",
+      "image": "📷",
+      "from": "OptixPro",
+      "feature": "24MP Sensor",
+      "quantity": "1",
+      "price": 599.99,
+      "subscription": true,
+      "description": "Professional digital camera with 24MP sensor, 4K video recording, and advanced autofocus system. Includes a versatile 18-55mm lens, built-in Wi-Fi for easy sharing, and a tilting touchscreen display."
+    },
+    {
+      "id": 4,
+      "productName": "Wireless Earbuds",
+      "image": "🎵",
+      "from": "AudioPods",
+      "feature": "Touch Controls",
+      "quantity": "2",
+      "price": 129.99,
+      "subscription": false,
+      "description": "True wireless earbuds with premium sound quality and seamless touch controls. Features active noise cancellation, IPX5 sweat resistance, and up to 28 hours of total playtime with the charging case."
+    }
+  ]

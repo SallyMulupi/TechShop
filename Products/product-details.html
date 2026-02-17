@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{PRODUCTNAME}} | TechShop</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f3f3f3;
+            color: #333;
+        }
+        
+        .header {
+            background-color: #131921;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #ff9900;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: #007185;
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .back-link:hover {
+            color: #C7511F;
+            text-decoration: underline;
+        }
+        
+        .product {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+        }
+        
+        .product__image-box {
+            padding: 30px;
+            background-color: #f8f8f8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .product__image {
+            font-size: 120px;
+            text-align: center;
+        }
+        
+        .product__content {
+            padding: 30px 30px 30px 0;
+        }
+        
+        .product__badge {
+            display: inline-block;
+            background-color: #ff9900;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .product__badge.not-subscription {
+            display: none;
+        }
+        
+        .product__name {
+            font-size: 1.8rem;
+            color: #131921;
+            margin-bottom: 15px;
+        }
+        
+        .product__price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #B12704;
+            margin-bottom: 20px;
+        }
+        
+        .product__divider {
+            height: 1px;
+            background-color: #e7e7e7;
+            margin: 20px 0;
+        }
+        
+        .product__details {
+            margin-bottom: 20px;
+        }
+        
+        .product__detail {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .product__detail-icon {
+            width: 24px;
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .product__description {
+            line-height: 1.6;
+            color: #555;
+        }
+        
+        .product__buy-box {
+            background-color: #f8f8f8;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        
+        .product__buy-button {
+            background-color: #FFD814;
+            color: #111;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            width: 100%;
+            transition: background-color 0.2s;
+            margin-bottom: 10px;
+        }
+        
+        .product__buy-button:hover {
+            background-color: #F7CA00;
+        }
+        
+        .product__buy-now {
+            background-color: #FFA41C;
+        }
+        
+        .product__buy-now:hover {
+            background-color: #FA8900;
+        }
+        
+        .product__delivery {
+            font-size: 0.9rem;
+            color: #007600;
+            margin-top: 10px;
+        }
+        
+        footer {
+            background-color: #131921;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            .product {
+                grid-template-columns: 1fr;
+            }
+            
+            .product__content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">TechShop</div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <a href="/overview" class="back-link">
+            <span style="margin-right: 5px;">←</span> Back to all products
+        </a>
+        
+        <div class="product">
+            <div class="product__image-box">
+                <div class="product__image">{{IMAGE}}</div>
+            </div>
+            
+            <div class="product__content">
+                <div class="product__badge {{NOT_SUBSCRIPTION}}">Prime</div>
+                <h1 class="product__name">{{PRODUCTNAME}}</h1>
+                <div class="product__price">${{PRICE}}</div>
+                
+                <div class="product__divider"></div>
+                
+                <div class="product__details">
+                    <div class="product__detail">
+                        <span class="product__detail-icon">🏢</span>
+                        <div>
+                            <strong>Brand/Manufacturer</strong>
+                            <div>{{FROM}}</div>
+                        </div>
+                    </div>
+                    
+                    <div class="product__detail">
+                        <span class="product__detail-icon">✨</span>
+                        <div>
+                            <strong>Key Feature</strong>
+                            <div>{{FEATURES}}</div>
+                        </div>
+                    </div>
+                    
+                    <div class="product__detail">
+                        <span class="product__detail-icon">📦</span>
+                        <div>
+                            <strong>Quantity</strong>
+                            <div>{{QUANTITY}} per package</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product__divider"></div>
+                
+                <h3>About this item</h3>
+                <p class="product__description">{{DESCRIPTION}}</p>
+                
+                <div class="product__buy-box">
+                    <a href="#" class="product__buy-button">Add to Cart</a>
+                    <a href="#" class="product__buy-button product__buy-now">Buy Now</a>
+                    <div class="product__delivery">
+                        <span>✓</span> Free Delivery Available
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 TechShop - All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
